@@ -1,0 +1,46 @@
+
+/* Global */
+body 			{background:#EBEBEB; padding-top:140px;}
+hr 				{margin:60px 0; border-color:#000;}
+
+
+/* Navigation */
+nav				{width:100%; padding:10px 100px;}
+nav button, 
+#navbar-menu	{position:relative; top:20px;}
+.navbar-brand	{padding-left:0;}
+#aucourant-logo	{height:64px; opacity:0.75;}
+
+
+/* Project Index */
+#project-index 			{height:auto;}
+.project-cover			{margin-bottom:20px; width: 300px; background:#CCC;}
+.project-cover:hover	{cursor:pointer;}
+.project-cover-image	{display:block; margin:60px auto; max-height:90px; max-width:65%; opacity:0.7;}
+.project-cover-caption	{background:#545454; padding:20px; width:100%;}
+
+
+/* Project Details */
+.project-banner {background:url(http://placehold.it/1200x900) no-repeat 50% 0 fixed; background-size:cover; margin:0 auto 40px; width:100%; position:relative; height:300px;}
+.project-description {position:absolute; bottom:0; padding:0 33.3% 2% 2%;}
+
+
+
+/* Small devices */
+@media (max-width: 767px) {
+	body {padding: 140px 20px;}
+	.project-cover-image {max-width:40%;}
+	.project-cover {width: 100%;}
+}
+
+
+/* Medium devices */
+@media (min-width: 837px) and (max-width: 979px) {
+	.container-fluid > #project-index .project-cover {width: 400px;}
+}
+
+
+/* Large devices */
+@media (min-width: 1200px) {
+	.container-fluid > #project-index .project-cover {width: 290px;}
+}

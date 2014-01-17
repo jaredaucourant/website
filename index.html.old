@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="aucouranticon.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>jaredaucourant portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="styles/layout.css" rel="stylesheet">
+    <link href="styles/typography.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body>
+    <main class="container">
+      
+      <header class="row">
+        <div class="col-md-1"><img src="logo.png" /></div>
+        <nav class="col-md-11">
+          <ul>
+            <li><a href="#">/PROJECTS</a></li>
+            <li style="color:#CCC">/LABS</li>
+            <li><a href="#">/ABOUT</a></li>
+            <li><a href="#">/FOLLOW</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="project-index" class="container">
+        <div class="masonry">
+          <div class="post col-md-4"><div class="project">
+            <img class="project-cover-image img-responsive" src="images/project-covers/cover-thumbnail-angelika.png">
+            <object type="image/svg+xml" class="project-cover-image img-responsive" data="image.svg">Your browser does not support SVG</object>
+            <div class="project-caption"><h3 class="project-title">Angelika Film Center</h3><p class="tag">Branding</p></div>
+          </div></div>
+
+          <div class="post col-md-4"><div class="project">
+            <img class="project-cover-image img-responsive" src="images/project-covers/cover-thumbnail-axis.png">
+            <div class="project-caption"><h3 class="project-title">'Axis' 3D Typeface</h3><p class="tag">Typography</p></div>
+          </div></div>
+
+          <div class="post col-md-4"><div class="project">
+            <img class="project-cover-image img-responsive" src="images/project-covers/cover-thumbnail-esquire.png">
+            <div class="project-caption"><h3 class="project-title">Esquire Magazine</h3><p class="tag">Branding</p></div>
+          </div></div>
+
+          <div class="post col-md-4"><div class="project">
+            <img class="project-cover-image img-responsive" src="images/project-covers/cover-thumbnail-subvert.png">
+            <div class="project-caption"><h3 class="project-title">Subvert Magazine</h3><p class="tag">Editorial Design</p></div>
+          </div></div>
+
+          <div class="post col-md-4"><div class="project">
+            <img class="project-cover-image img-responsive" src="images/project-covers/cover-thumbnail-okcupid.png">
+            <div class="project-caption"><h3 class="project-title">OkCupid</h3><p class="tag">Advertising</p></div>
+          </div></div>
+
+          <div class="post col-md-4"><div class="project">
+            <img class="project-cover-image img-responsive" src="images/project-covers/cover-thumbnail-earthday.png">
+            <div class="project-caption"><h3 class="project-title">Earth Day</h3><p class="tag">Graphic Design</p></div>
+          </div></div>
+
+          <div class="post col-md-4"><div class="project">
+            <img class="project-cover-image img-responsive" src="images/project-covers/cover-thumbnail-animus.png">
+            <div class="project-caption"><h3 class="project-title">Animus Terrariums</h3><p class="tag">Industrial Design</p></div>
+          </div></div>
+
+          <div class="post col-md-4"><div class="project">
+            <img class="project-cover-image img-responsive" src="images/project-covers/cover-thumbnail-natgeo.png">
+            <div class="project-caption"><h3 class="project-title">National Geographic</h3><p class="tag">Web Design</p></div>
+          </div></div>
+        </div>
+      </section>
+      <hr>
+      <footer></footer>
+
+    </main> <!-- /container -->
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-instagram/0.3.0/instagram.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function () {
+    var $container = $('.masonry');
+
+    $container.imagesLoaded(function () {
+        $container.masonry({
+            itemSelector: '.post',
+            columnWidth: '.post',
+            transitionDuration: 0
+        });
+    });
+});
+    </script>
+  </body>
+</html>
